@@ -1,12 +1,32 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Card from "./components/Card";
+import data from "./data";
 import "./App.css";
 
 function App() {
+  const card_data = data.map((item) => {
+    return (
+      <Card
+        key={item.id}
+        title={item.title}
+        description={item.description}
+        price={item.price}
+        img={item.coverImg}
+        rating={item.stats.rating}
+        reviewCount={item.stats.reviewCount}
+        location={item.location}
+        openSpots={item.openSpots}
+      />
+    );
+  });
   return (
     <div className="App">
       <Navbar />
-      <Hero />
+      <div className="container">
+        <Hero />
+        <section className="cards-list">{card_data}</section>
+      </div>
     </div>
   );
 }
