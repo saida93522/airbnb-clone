@@ -25,6 +25,9 @@ nav {
   padding: 20px 36px;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
+.bold {
+  font-weight: bold;
+}
 
 .nav--logo {
   margin-inline-start: 1rem;
@@ -90,9 +93,9 @@ nav {
   height: 14px;
 }
 
-.card--price {
+/* .card--price {
   margin-top: auto;
-}
+} */
 
 .card--badge {
   position: absolute;
