@@ -1,5 +1,4 @@
 const Card = ({ item }) => {
-  console.log(item);
   let badgeText;
   if (item.openSpots === 0) {
     badgeText = "SOLD OUT";
